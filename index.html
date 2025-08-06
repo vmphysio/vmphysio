@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#9ECAD6">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Βασιλική Μανωλάκη Φυσικοθεραπεία Χίος</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Εξειδικευμένες υπηρεσίες φυσικοθεραπείας στην Xίο. Μυοσκελετική, νευρολογική αποκατάσταση, καρδιοαναπνευστική φυσικοθεραπεία και περισσότερα.">
+  <meta name="keywords"
+    content="φυσικοθεραπεία Χίος, φυσικοθεραπευτής Χίος, μυοσκελετική φυσικοθεραπεία Χίος, νευρολογική αποκατάσταση Χίος, καρδιοαναπνευστική φυσικοθεραπεία, λεμφική παροχέτευση, θεραπευτική μάλαξη, φυσικοθεραπευτήριο Χίος, αποκατάσταση Χίος, Βασιλική Μανωλάκη, physiotherapy Chios">
+  <meta name="author" content="Βασιλική Μανωλάκη">
+
+  <!-- Open Graph Meta Tags for social sharing -->
+  <meta property="og:title" content="Βασιλική Μανωλάκη Φυσικοθεραπεία Χίος">
+  <meta property="og:description" content="Εξειδικευμένες υπηρεσίες φυσικοθεραπείας στην Χίο">
+  <meta property="og:image" content="logo.jpg">
+  <meta property="og:url" content="https://vmphysio.gr">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Βασιλική Μανωλάκη Φυσικοθεραπεία Χίος">
+  <meta name="twitter:description" content="Εξειδικευμένες υπηρεσίες φυσικοθεραπείας στην Χίο">
+  <meta name="twitter:image" content="logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Βασιλική Μανωλάκη",
+  "jobTitle": "Φυσικοθεραπεύτρια",
+  "telephone": "+306947630148",
+  "url": "https://vmphysio.gr",
+  "areaServed": ["Χίος"],
+  "medicalSpecialty": "Physiotherapy",
+  "serviceType": [
+    "Φυσικοθεραπεία",
+    "Μυοσκελετική φυσικοθεραπεία",
+    "Νευρολογική φυσικοθεραπεία",
+    "Καρδιοαναπνευστική φυσικοθεραπεία",
+    "Φυσικοθεραπεία πυελικού εδάφους",
+    "Λεμφική παροχέτευση",
+    "Θεραπευτική μάλαξη"
+  ]
+}
+</script>
+  <style>
+    :root {
+      --primary: #9ECAD6;
+      --primary-dark: #7BA7B3;
+      --bg-light: #f9f9f9;
+      --bg-dark: #374151;
+      --text-main: #222;
+      --text-light: #fff;
+      --accent: #60a5fa;
+      --radius: 1rem;
+      --shadow: 0 4px 24px rgba(80, 120, 140, 0.10);
+      --transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+      --max-width: 900px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: var(--primary);
+      padding: 1rem 0;
+      box-shadow: 0 2px 8px rgba(80, 120, 140, 0.07);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar__container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+
+    .navbar__brand {
+      color: var(--text-light);
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .navbar__list {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 1.5rem;
+    }
+
+    .navbar__link {
+      color: var(--text-light);
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 99px;
+      transition: var(--transition);
+    }
+
+    .navbar__link:hover,
+    .navbar__link--active {
+      background: var(--accent);
+      color: var(--text-light);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, var(--primary) 0%, #e3f6fb 100%);
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 4rem 1rem 2rem 1rem;
+    }
+
+    .hero__img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 32px rgba(0, 0, 0, 0.10);
+      margin-bottom: 1.2rem;
+      border: 5px solid #fff;
+      background: #fff;
+    }
+
+    .hero__title {
+      font-size: 2.1rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin: 0.2em 0 0.1em 0;
+      color: var(--text-main);
+    }
+
+    .hero__subtitle {
+      font-size: 1.2rem;
+      color: #406370;
+      margin: 0.3em 0;
+      font-weight: 500;
+    }
+
+    .hero__desc {
+      color: #406370;
+      margin: 0.7em 0;
+      font-size: 1.1rem;
+    }
+
+    /* About section */
+    section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.8rem 1rem;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      color: var(--primary-dark);
+      margin-bottom: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .about__content {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.2rem 1.2rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--text-main);
+      max-width: 720px;
+      margin: auto;
+    }
+
+    /* Services */
+    .services-list {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(130, 160, 180, 0.13);
+    }
+
+    .service-title {
+      font-weight: bold;
+      color: var(--primary-dark);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-desc {
+      color: #3b4b58;
+      font-size: 1rem;
+    }
+
+    /* Contact */
+    .contact-block {
+      background: var(--primary);
+      color: var(--text-light);
+      border-radius: var(--radius);
+      padding: 1.8rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(80, 120, 140, 0.09);
+      margin-bottom: 2rem;
+    }
+
+    .contact-block a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 0.5em;
+      font-weight: 500;
+    }
+
+    .contact-block a:hover {
+      text-decoration: none;
+      color: #406370;
+    }
+
+    .seminars-timeline-centered {
+      position: relative;
+      margin: 2.5rem auto 0 auto;
+      padding: 0 0 0 0;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .seminars-timeline-centered::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      transform: translateX(-50%);
+      background: #9ECAD6;
+    }
+
+    .seminar-event {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-bottom: 2.5rem;
+      width: 100%;
+    }
+
+    .seminar-event::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 13px;
+      width: 16px;
+      height: 16px;
+      background: #9ECAD6;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 4px rgba(80, 120, 140, 0.1);
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .seminar-year {
+      background: #fff;
+      color: #7BA7B3;
+      font-weight: 700;
+      font-size: 1.06em;
+      position: relative;
+      z-index: 2;
+      padding: 0 0.5rem;
+      margin-bottom: 0.4rem;
+      margin-top: 0.8rem;
+    }
+
+    .seminar-content {
+      background: #f6fbff;
+      border-radius: 0.7rem;
+      padding: 0.7rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(80, 120, 140, 0.08);
+      margin-top: 0.2em;
+      text-align: center;
+      max-width: 320px;
+    }
+
+    .seminar-org {
+      color: #406370;
+      font-size: 0.97rem;
+    }
+
+    .navbar__toggle {
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    .navbar__list {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (max-width: 768px) {
+      .navbar__toggle {
+        display: block;
+      }
+
+      .navbar__list {
+        display: none;
+        flex-direction: column;
+        background: var(--primary);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+      }
+
+      .navbar__list.show {
+        display: flex;
+      }
+
+      .navbar__link {
+        padding: 0.75rem 1rem;
+        color: var(--text-light);
+        display: block;
+      }
+    }
+
+
+    /* Responsive */
+    @media (min-width: 600px) {
+      .hero__title {
+        font-size: 2.5rem;
+      }
+
+      .hero__img {
+        width: 190px;
+        height: 190px;
+      }
+
+      section {
+        padding: 3.2rem 2rem;
+      }
+
+      .about__content {
+        padding: 2.8rem 2.5rem;
+      }
+
+      .services-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 900px) {
+      body {
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        padding-top: 5rem;
+      }
+
+      .services-list {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .about__content,
+      .services-list {
+        font-size: 1.08rem;
+      }
+    }
+
+    /* Animations with fade-in/move up */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(.5, 0, .1, 1),
+        transform 0.7s cubic-bezier(.5, 0, .1, 1);
+      will-change: opacity, transform;
+    }
+
+    [data-animate].visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__brand">Manolaki Physio</a>
+      <button class="navbar__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+      <ul class="navbar__list">
+        <li><a href="#hero" class="navbar__link navbar__link--active">Αρχική</a></li>
+        <li><a href="#about" class="navbar__link">Σχετικά</a></li>
+        <li><a href="#services" class="navbar__link">Υπηρεσίες</a></li>
+        <li><a href="#contact" class="navbar__link">Επικοινωνία</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <div class="hero" id="hero">
+    <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
+    <img src="hero.jpg" class="hero__img" data-animate fetchpriority="high">
+    <h1 class="hero__title" data-animate>Βασιλική Μανωλάκη</h1>
+    <div class="hero__subtitle" data-animate>Φυσικοθεραπεύτρια</div>
+    <div class="hero__desc" data-animate>Εξειδικευμένη Φροντίδα Υγείας και Αποκατάστασης</div>
+    <div style="margin-top:2rem" data-animate>
+      <a href="#contact" class="navbar__link"
+        style="background:var(--accent);color:#fff;text-decoration:none;padding:0.7em 1.5em;border-radius:99px;font-weight:500;">Επικοινωνία</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-title" data-animate>Σχετικά</div>
+    <div class="about__content" data-animate>
+      Η Βασιλική Μανωλάκη είναι πτυχιούχος Φυσικοθεραπεύτρια, απόφοιτη του Πανεπιστημίου Θεσσαλίας (πρώην ΤΕΙ). Διαθέτει
+      πολυετή και πολύτιμη επαγγελματική εμπειρία, την οποία απέκτησε μέσα από συνεργασίες με δημόσια νοσοκομεία, κέντρα
+      αποκατάστασης και ιδιωτικά φυσικοθεραπευτήρια.<br><br>
+      Επενδύει διαρκώς στη συνεχιζόμενη επαγγελματική της επιμόρφωση, παρακολουθώντας πληθώρα εξειδικευμένων σεμιναρίων
+      και διευρύνοντας διαρκώς τις γνώσεις και δεξιότητές της. Με σεβασμό στον άνθρωπο και έμφαση στις επιστημονικά
+      τεκμηριωμένες πρακτικές, σχεδιάζει εξατομικευμένα θεραπευτικά προγράμματα για κάθε ασθενή.<br><br>
+      Σκοπός της είναι η συνολική ενίσχυση της ποιότητας ζωής, μέσα από σχέσεις εμπιστοσύνης, φροντίδας και διαρκούς
+      εξέλιξης.
+    </div>
+    <div class="seminars-timeline-centered">
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2017 - 2018 - 2025</span>
+        <div class="seminar-content">
+          <strong>Σεμινάρια Πρώτων Βοηθειών</strong>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2022</span>
+        <div class="seminar-content">
+          <strong>Άσκηση στην Ορθοπαιδική Αποκατάσταση</strong><br>
+          <span class="seminar-org">Manual Courses</span>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2024</span>
+        <div class="seminar-content">
+          <strong>Ολοκληρωμένη Διαχείριση Οιδήματος με τη Μέθοδο Vodder</strong><br>
+          <span class="seminar-org">Epimorfosis</span>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2024</span>
+        <div class="seminar-content">
+          <strong>Φυσικοθεραπευτική Αντιμετώπιση Αναπνευστικών Προβλημάτων</strong><br>
+          <span class="seminar-org">Πανελλήνιος Σύλλογος Φυσικοθεραπευτών</span>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2024</span>
+        <div class="seminar-content">
+          <strong>Θεραπεύτρια Μασάζ</strong><br>
+          <span class="seminar-org">Release and Relax Motion</span>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2024</span>
+        <div class="seminar-content">
+          <strong>The Painful Shoulder</strong><br>
+          <span class="seminar-org">Adam Meakins</span>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2024</span>
+        <div class="seminar-content">
+          <strong>Clinical Pilates</strong><br>
+          <span class="seminar-org">Clinical Pilates Institute</span>
+        </div>
+      </div>
+      <div class="seminar-event" data-animate>
+        <span class="seminar-year">2025</span>
+        <div class="seminar-content" data-animate>
+          <strong>Φυσικοθεραπεία Πυελικού Εδάφους</strong><br>
+          <span class="seminar-org">Πανεπιστήμιο Πατρών</span>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="section-title" data-animate>Υπηρεσίες</div>
+    <div class="services-list" data-animate>
+      <div class="service-card">
+        <div class="service-title">Μυοσκελετική Φυσικοθεραπεία</div>
+        <div class="service-desc">
+          Αξιολόγηση και αποκατάσταση μυοσκελετικών προβλημάτων με manual therapy, άσκηση και ηλεκτροθεραπεία για
+          ανακούφιση πόνου και βελτίωση κινητικότητας.
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-title">Νευρολογική Αποκατάσταση</div>
+        <div class="service-desc">
+          Αποκατάσταση ασθενών με νευρολογικές παθήσεις μέσω ηλεκτρομυοδιέγερσης και κινησιοθεραπείας για βελτίωση
+          κινητικότητας και ισορροπίας.
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-title">Αντιμετώπιση Καρδιοαναπνευστικών Νοσημάτων</div>
+        <div class="service-desc">
+          Θεραπεία αναπνευστικών και καρδιαγγειακών παθήσεων με ασκήσεις και τεχνικές αποσυμφόρησης για βελτίωση της
+          αναπνευστικής λειτουργίας.
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-title">Φυσικοθεραπεία Πυελικού Εδάφους</div>
+        <div class="service-desc">
+          Αποκατάσταση μυών της πυελικής περιοχής με ενδυνάμωση και ειδικά προγράμματα για βελτίωση της λειτουργικότητας
+          και ανακούφιση συμπτωμάτων.
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-title">Αντιμετώπιση Οιδήματος / Λεμφική Παροχέτευση</div>
+        <div class="service-desc">
+          Θεραπεία οιδημάτων με λεμφική παροχέτευση, περίδεση και ασκήσεις για μείωση οιδήματος και βελτίωση
+          κινητικότητας.
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-title">Θεραπευτική Μάλαξη</div>
+        <div class="service-desc">
+          Εξειδικευμένη μάλαξη για μείωση πόνου, χαλάρωση μυών και βελτίωση της ελαστικότητας των ιστών.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-title" data-animate>Επικοινωνία</div>
+    <div class="contact-block" data-animate>
+      <div><strong>Τηλέφωνο:</strong> <a href="tel:+306947630148">6947630148</a></div>
+      <div><strong>Email:</strong> <a href="mailto:vmanolaki.physio@gmail.com">vmanolaki.physio@gmail.com</a></div>
+      <div style="margin-top:0.5em;">
+        <a href="https://www.facebook.com/profile.php?id=100090281213836/" target="_blank" rel="noopener">Facebook</a> |
+        <a href="https://www.instagram.com/vmanolaki.physio//" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function animateOnScroll() {
+      document.querySelectorAll('[data-animate]').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < (window.innerHeight - 50)) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    document.addEventListener('DOMContentLoaded', animateOnScroll);
+    window.addEventListener('scroll', animateOnScroll);
+
+    //burger menu code
+
+    const toggleButton = document.querySelector('.navbar__toggle');
+    const navList = document.querySelector('.navbar__list');
+    const navLinks = navList.querySelectorAll('.navbar__link');
+
+    toggleButton.addEventListener('click', () => {
+      const expanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
+      toggleButton.setAttribute('aria-expanded', !expanded);
+      navList.classList.toggle('show');
+    });
+
+    navLinks.forEach(link =>
+      link.addEventListener('click', () => {
+        if (navList.classList.contains('show')) {
+          navList.classList.remove('show');
+          toggleButton.setAttribute('aria-expanded', false);
+        }
+      })
+    );
+
+
+  </script>
+</body>
+
+</html>
